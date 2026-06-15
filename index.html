@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A minimalist high-fashion homepage with a full-screen editorial image carousel."
+    />
+    <title>Maison Noir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <nav class="nav-grid">
+        <div class="nav-left" aria-label="Primary">
+          <a href="#">Menu</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+        </div>
+
+        <a class="brand" href="#" aria-label="Maison Noir home">Maison Noir</a>
+
+        <div class="nav-right" aria-label="Shop actions">
+          <a href="#">Search</a>
+          <a href="#">Log in</a>
+          <a href="#">Cart (0)</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Editorial campaign">
+        <div class="hero-slide is-active" data-slide="0"></div>
+        <div class="hero-slide" data-slide="1"></div>
+        <div class="hero-slide" data-slide="2"></div>
+
+        <div class="hero-copy">
+          <p class="season">Autumn Winter 2026</p>
+          <h1>Discipline in Motion</h1>
+          <a class="hero-link" href="#">View Collection</a>
+        </div>
+
+        <div class="slider-status" aria-label="Current slide">
+          <span class="status-dot is-active"></span>
+          <span class="status-dot"></span>
+          <span class="status-dot"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Maison Noir. All rights reserved.</p>
+
+      <form class="newsletter" aria-label="Newsletter sign up">
+        <label for="email">Newsletter</label>
+        <div class="newsletter-row">
+          <input id="email" type="email" placeholder="Email address" />
+          <button type="submit">Join</button>
+        </div>
+      </form>
+
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+        Instagram
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
