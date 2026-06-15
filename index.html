@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURRANT. | Official Online Store | High Fashion & Avant-Garde</title>
+    <meta name="description" content="Explore the avant-garde, minimalist, and brutalist high-fashion collections of COURRANT. Premium tailoring, experimental designs, and timeless aesthetics.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Header / Navbar (Sticky/Fixed) -->
+        <header>
+            <div class="header-left">
+                <button id="menu-toggle-btn" aria-label="Open menu">Menu</button>
+                <a href="#" class="hide-mobile" id="collections-nav-link">Collections</a>
+            </div>
+            
+            <div class="header-center">
+                <a href="#" id="brand-logo">
+                    <img src="logo.png" alt="COURRANT" class="brand-logo-img">
+                </a>
+            </div>
+            
+            <div class="header-right">
+                <button id="search-btn" aria-label="Open search">Search</button>
+                <a href="#" class="hide-mobile" id="login-nav-link">Log in</a>
+                <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </header>
+
+        <!-- Scrollable Document Flow -->
+        <div class="scroll-container">
+
+            <!-- Main Hero Section (First Fold) -->
+            <main class="hero-section">
+                
+                <!-- Background Image Carousel Slider -->
+                <div class="carousel-container">
+                    <div class="carousel-slide active" data-index="0">
+                        <img src="IMG_7249.PNG" alt="Courrant Autumn Winter 2026 Look 1">
+                        <div class="carousel-overlay"></div>
+                    </div>
+                    <div class="carousel-slide" data-index="1">
+                        <img src="IMG_7253.PNG" alt="Courrant Autumn Winter 2026 Look 2">
+                        <div class="carousel-overlay"></div>
+                    </div>
+                    <div class="carousel-slide" data-index="2">
+                        <img src="IMG_7254.PNG" alt="Courrant Autumn Winter 2026 Bag Collection">
+                        <div class="carousel-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Slide Indicators -->
+                <div class="carousel-indicators" aria-label="Slide selectors">
+                    <button class="indicator-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="indicator-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="indicator-dot" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+
+                <!-- Hero Headline Content -->
+                <div class="hero-content">
+                    <p class="hero-subtitle" id="hero-subtitle-text">COURRANT / EXCLUSIVE CAPSULE</p>
+                    <h1 class="hero-title" id="hero-title-text">DENIM & LEATHER<br>AUTUMN WINTER 2026</h1>
+                    <button class="hero-btn" id="hero-cta-btn">
+                        <span>Explore Collection</span>
+                    </button>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <a href="#editorial-section" class="scroll-indicator" id="scroll-arrow" aria-label="Scroll down">
+                    <span class="scroll-text">Scroll</span>
+                    <div class="scroll-line"></div>
+                </a>
+
+            </main>
+
+            <!-- Section 1: Editorial Concept -->
+            <section id="editorial-section" class="editorial-section">
+                <div class="editorial-grid">
+                    <div class="editorial-image-col">
+                        <img src="IMG_7253.PNG" alt="Courrant tailoring campaign look">
+                    </div>
+                    <div class="editorial-text-col">
+                        <span class="section-tag">01 / CONCEPT</span>
+                        <h2 class="section-title">THE OFFICE DECONSTRUCTED</h2>
+                        <p class="section-description">
+                            A study of corporate uniforms reimagined through an avant-garde lens. 
+                            Structured tailoring meets fluid proportions, creating a bold, gender-fluid statement of modern power dressing. 
+                            Heavy denims and structured wools form the architectural foundation of this season.
+                        </p>
+                        <a href="#" class="minimal-link" id="editorial-link">View Lookbook</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Selected Products -->
+            <section id="shop-section" class="shop-section">
+                <div class="section-header">
+                    <span class="section-tag">02 / CATALOG</span>
+                    <h2 class="section-title">SELECTED WORK</h2>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="IMG_7249.PNG" alt="Deconstructed Denim Jacket">
+                            <button class="quick-add-btn" data-product="Deconstructed Denim Jacket">Add to Bag</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Deconstructed Denim Jacket</h3>
+                            <span class="product-price">1,500 ฿</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="IMG_7253.PNG" alt="Wide-Leg Plissé Trousers">
+                            <button class="quick-add-btn" data-product="Wide-Leg Plissé Trousers">Add to Bag</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wide-Leg Plissé Trousers</h3>
+                            <span class="product-price">2,000 ฿</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="IMG_7254.PNG" alt="Sculpted Leather Tote">
+                            <button class="quick-add-btn" data-product="Sculpted Leather Tote">Add to Bag</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sculpted Leather Tote</h3>
+                            <span class="product-price">1,800 ฿</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Brand Statement -->
+            <section class="statement-section">
+                <div class="statement-container">
+                    <p class="statement-text">
+                        "COURRANT SHAPES THE FUTURE OF MODERN COUTURE THROUGH DECONSTRUCTED TAILORING, EXPERIMENTAL PROPORTIONS, AND A SLIGHTLY BRUTALIST AESTHETIC."
+                    </p>
+                    <span class="statement-author">AW26 INQUIRY</span>
+                </div>
+            </section>
+
+            <!-- Footer (Moved into normal document flow) -->
+            <footer>
+                <div class="footer-left">
+                    <p>&copy; 2026 COURRANT. ALL RIGHTS RESERVED.</p>
+                </div>
+                
+                <div class="footer-center" id="footer-newsletter">
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="NEWSLETTER SUBSCRIPTION" class="newsletter-input" required aria-label="Email Address">
+                        <button type="submit" class="newsletter-btn">Join</button>
+                    </form>
+                </div>
+                
+                <div class="footer-right">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" id="instagram-link">Instagram</a>
+                    <a href="#" class="hide-mobile" id="privacy-link">Privacy Policy</a>
+                </div>
+            </footer>
+
+        </div> <!-- End Scroll Container -->
+
+        <!-- Fullscreen Navigation Menu Overlay -->
+        <nav class="menu-overlay" id="menu-overlay" aria-label="Main Navigation">
+            <button class="menu-close-btn" id="menu-close-btn" aria-label="Close menu">Close</button>
+            
+            <div class="menu-nav">
+                <a href="#" class="menu-nav-link">New Arrivals</a>
+                <a href="#" class="menu-nav-link">Shop Denim</a>
+                <a href="#" class="menu-nav-link">Shop Leather</a>
+                <a href="#" class="menu-nav-link">Campaigns</a>
+                <a href="#" class="menu-nav-link">Archives</a>
+                <a href="#" class="menu-nav-link">About Courrant</a>
+            </div>
+            
+            <div class="menu-footer">
+                <div class="menu-footer-col">
+                    <h4>Collections</h4>
+                    <p><a href="#">Fall Winter 2026</a></p>
+                    <p><a href="#">Spring Summer 2026</a></p>
+                    <p><a href="#">Pre-Fall 2025</a></p>
+                </div>
+                <div class="menu-footer-col">
+                    <h4>Customer Care</h4>
+                    <p><a href="#">Shipping & Returns</a></p>
+                    <p><a href="#">Contact Support</a></p>
+                    <p><a href="#">Size Guide</a></p>
+                </div>
+                <div class="menu-footer-col">
+                    <h4>Legal</h4>
+                    <p><a href="#">Terms of Service</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Cookies Settings</a></p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Search Overlay -->
+        <div class="search-overlay" id="search-overlay" aria-label="Search overlay">
+            <div class="search-container">
+                <button class="search-close-btn" id="search-close-btn">Close</button>
+                <input type="text" placeholder="Type to search..." class="search-overlay-input" id="search-input">
+                <span class="search-hint">Press enter to search or escape to exit</span>
+            </div>
+        </div>
+
+        <!-- Interactive Toast Notification -->
+        <div class="cart-toast" id="cart-toast">
+            Item added to shopping bag.
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
